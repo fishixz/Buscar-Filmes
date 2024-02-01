@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Filmes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c3e50; /* Fundo mais escuro */
+      color: #ecf0f1; /* Cor do texto */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #34495e; /* Cor de fundo do container */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #searchInput {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #2c3e50; /* Cor do texto de entrada */
+    }
+
+    #searchButton {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease; /* Adiciona uma transição de cor ao botão */
+    }
+
+    #searchButton:hover {
+      background-color: #2980b9; /* Cor ao passar o mouse */
+    }
+
+    #moviesList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .movie-card {
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-radius: 5px;
+      transition: transform 0.3s ease; /* Adiciona uma transição de escala aos cartões de filme */
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .movie-details {
+      flex-grow: 1;
+    }
+
+    p {
+      color: #555;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cornerText">
+  <a href="https://www.instagram.com/edyxluis/" target="_blank" style="text-decoration: none; color: inherit;">
+    @Edyxluis
+  </a>
+</div>
+
+  <div class="container">
+    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="Logo" id="logo">
+    <input type="text" id="searchInput" placeholder="Pesquisar Filme">
+    <button id="searchButton">Pesquisar</button>
+  </div>
+
+  <div id="moviesList" class="container"></div>
+
+</body>
+</html>
