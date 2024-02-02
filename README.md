@@ -11,4 +11,4 @@ OBS: Para que o site funcione é necessário a key! pegue a sua acessando o site
 
 Feito isso Sucesso, salve o arquivo e inicie seu sistema de servidor web! Boa sorte. Qualquer dúvida chamar no Instagram.
 
-<a href="instagram.com/edyxluix/">@Edyxluis</a>
+<a href="https://instagram.com/edyxluis/">@Edyxluis</a>
