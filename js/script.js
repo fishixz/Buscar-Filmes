@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const apiKey = 'aebcbfe28ff55b94ad2a40485d283163';
+  const apiKey = 'COLE-SUA-CHAVE-DA-API';
 
   // Função para traduzir descrições automaticamente
   async function translateDescription(description, targetLanguage) {
